@@ -1,0 +1,9 @@
+package GUI
+
+import javafx.scene.layout.AnchorPane
+
+component Login {
+	AnchorPane {
+		//TODO Add Nodes
+	}
+}
