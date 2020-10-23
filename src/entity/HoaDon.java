@@ -111,7 +111,7 @@ public class HoaDon {
 
 	public boolean xoaChiTietHoaDon(String id) {
 		for (ChiTietHoaDon chiTietHoaDon : dsChiTietHoaDon) {
-			if (chiTietHoaDon.getId().equals(id)) {
+			if (chiTietHoaDon.getThuoc().getId().equals(id)) {
 				if (this.getDsChiTietHoaDon().remove(chiTietHoaDon)) {
 					return true;
 				}
@@ -123,7 +123,7 @@ public class HoaDon {
 
 	public boolean suaSoLuongThuoc(String id, int soLuongThuoc) {
 		for (ChiTietHoaDon chiTietHoaDon : dsChiTietHoaDon) {
-			if (chiTietHoaDon.getId().equals(id)) {
+			if (chiTietHoaDon.getThuoc().getId().equals(id)) {
 				chiTietHoaDon.setSoLuong(soLuongThuoc);
 				return true;
 			}
@@ -133,7 +133,7 @@ public class HoaDon {
 
 	public ChiTietHoaDon timChiTietHoaDon(String id) {
 		for (ChiTietHoaDon chiTietHoaDon : dsChiTietHoaDon) {
-			if (chiTietHoaDon.getId().equals(id)) {
+			if (chiTietHoaDon.getThuoc().getId().equals(id)) {
 				return chiTietHoaDon;
 			}
 		}

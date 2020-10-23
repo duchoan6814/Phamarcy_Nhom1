@@ -89,7 +89,7 @@ public class PhieuNhapHang {
 	
 	public boolean xoaLoThuoc(String id) {
 		for (LoThuoc loThuoc : dsLoThuoc) {
-			if (loThuoc.getId().equals(id)) {
+			if (loThuoc.getThuoc().getId().equals(id)) {
 				dsLoThuoc.remove(loThuoc);
 				return true;
 			}
@@ -99,7 +99,7 @@ public class PhieuNhapHang {
 	
 	public LoThuoc timKiemLoThuoc(String id) {
 		for (LoThuoc loThuoc : dsLoThuoc) {
-			if (loThuoc.getId().equals(id)) {
+			if (loThuoc.getThuoc().getId().equals(id)) {
 				return loThuoc;
 			}
 		}
