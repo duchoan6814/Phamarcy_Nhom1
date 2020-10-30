@@ -16,8 +16,9 @@ public class MainTest extends Application {
 	@Override
 	public void start(Stage arg0) throws Exception {
 		// TODO Auto-generated method stub
-		Parent root = FXMLLoader.load(getClass().getResource("Login.fxml"));
+		Parent root = FXMLLoader.load(getClass().getResource("MainSence.fxml"));
 		Scene scene = new Scene(root);
+//		arg0.initStyle(StageStyle.TRANSPARENT);
 		arg0.setTitle("TestAPP");
 		arg0.setScene(scene);
 		arg0.show();
