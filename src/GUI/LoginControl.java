@@ -2,8 +2,10 @@ package GUI;
 
 
 import java.io.IOException;
+import java.util.ResourceBundle;
 
 import DAO.DAOTaiKhoan;
+import entity.NhanVienBanThuoc;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -34,9 +36,15 @@ public class LoginControl{
 	}
 
 	public void showSenceMain() {
-		Parent root;
+//		Parent root;
 		try {
-			root = FXMLLoader.load(getClass().getResource("MainSence.fxml"));
+//			root = FXMLLoader.load(getClass().getResource("MainSence.fxml"));
+			FXMLLoader loader = new FXMLLoader(getClass().getResource("MainSence.fxml"));
+			NhanVienBanThuoc nhanVienBanThuoc = tk.getNhanVienBanThuocByUserName(userName.getText());
+			MainSenceControl controller = new MainSenceControl();
+			controller.setNhanVienBanThuoc(nhanVienBanThuoc);
+			loader.setController(controller);
+			Parent root = loader.load();
 			Scene scene = new Scene(root);
 			Stage stage = new Stage();
 			//			arg0.initStyle(StageStyle.TRANSPARENT);
