@@ -15,6 +15,7 @@ module Phamarcy_Nhom1 {
 	requires javafx.swt;
 	requires javafx.web;
 	requires java.sql;
+	requires charm.glisten;
 	
 	exports GUI;
 }

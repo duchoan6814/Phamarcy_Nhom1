@@ -1,12 +1,28 @@
 package entity;
 
 import java.sql.Date;
+import java.util.Arrays;
 
 public class NhanVienBanThuoc {
 	private String id, hoTenDem, ten, soDienThoai, soCMND;
 	private Date ngaySinh;
 	private boolean gioiTinh;
 	private DiaChi diaChi;
+	private byte[] avatar;
+	private TaiKhoan taiKhoan;
+	
+	public TaiKhoan getTaiKhoan() {
+		return taiKhoan;
+	}
+	public void setTaiKhoan(TaiKhoan taiKhoan) {
+		this.taiKhoan = taiKhoan;
+	}
+	public byte[] getAvatar() {
+		return avatar;
+	}
+	public void setAvatar(byte[] avatar) {
+		this.avatar = avatar;
+	}
 	public String getId() {
 		return id;
 	}
@@ -55,8 +71,9 @@ public class NhanVienBanThuoc {
 	public void setDiaChi(DiaChi diaChi) {
 		this.diaChi = diaChi;
 	}
+	
 	public NhanVienBanThuoc(String id, String hoTenDem, String ten, String soDienThoai, String soCMND, Date ngaySinh,
-			boolean gioiTinh, DiaChi diaChi) {
+			boolean gioiTinh, DiaChi diaChi, byte[] avatar, TaiKhoan taiKhoan) {
 		super();
 		this.id = id;
 		this.hoTenDem = hoTenDem;
@@ -66,6 +83,8 @@ public class NhanVienBanThuoc {
 		this.ngaySinh = ngaySinh;
 		this.gioiTinh = gioiTinh;
 		this.diaChi = diaChi;
+		this.avatar = avatar;
+		this.taiKhoan = taiKhoan;
 	}
 	public NhanVienBanThuoc() {
 		super();
@@ -101,8 +120,9 @@ public class NhanVienBanThuoc {
 	public String toString() {
 		return "NhanVienBanThuoc [id=" + id + ", hoTenDem=" + hoTenDem + ", ten=" + ten + ", soDienThoai=" + soDienThoai
 				+ ", soCMND=" + soCMND + ", ngaySinh=" + ngaySinh + ", gioiTinh=" + gioiTinh + ", diaChi=" + diaChi
-				+ "]";
+				+ ", avatar=" + Arrays.toString(avatar) + ", taiKhoan=" + taiKhoan + "]";
 	}
 
+	
 
 }

@@ -18,8 +18,7 @@
 	<children>
 		<AnchorPane layoutX="200.0" prefHeight="700.0" prefWidth="1080.0" style="-fx-background-color: #E1E6EE;">
 			<children>
-				<StackPane layoutY="44.0" prefHeight="657.0" prefWidth="1080.0">
-					<fx:include source="pnlBanHang.fxml" />
+				<StackPane fx:id="stkOptions" layoutY="44.0" prefHeight="657.0" prefWidth="1080.0">
 				</StackPane>
 				<AnchorPane fx:id="pnlMain" prefHeight="43.0" prefWidth="1080.0" style="-fx-background-color: #fff;">
 					<children>

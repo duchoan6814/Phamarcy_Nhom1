@@ -6,7 +6,14 @@ public class Thuoc {
 	private double gia, thue;
 	private NhaCungCap nhaCungCap;
 	private LoaiThuoc loaiThuoc;
+	private String nuocSanXuat;
 
+	public String getNuocSanXuat() {
+		return nuocSanXuat;
+	}
+	public void setNuocSanXuat(String nuocSanXuat) {
+		this.nuocSanXuat = nuocSanXuat;
+	}
 	public double getThue() {
 		return thue;
 	}
@@ -79,9 +86,10 @@ public class Thuoc {
 	public void setLoaiThuoc(LoaiThuoc loaiThuoc) {
 		this.loaiThuoc = loaiThuoc;
 	}
-
+	
 	public Thuoc(String id, String tenThuoc, String moTa, String donViTinh, String dangBaoChe, String quyCachDongGoi,
-			int hanSuDung, int tonKho, double gia, double thue, NhaCungCap nhaCungCap, LoaiThuoc loaiThuoc) {
+			int hanSuDung, int tonKho, double gia, double thue, NhaCungCap nhaCungCap, LoaiThuoc loaiThuoc,
+			String nuocSanXuat) {
 		super();
 		this.id = id;
 		this.tenThuoc = tenThuoc;
@@ -95,6 +103,7 @@ public class Thuoc {
 		this.thue = thue;
 		this.nhaCungCap = nhaCungCap;
 		this.loaiThuoc = loaiThuoc;
+		this.nuocSanXuat = nuocSanXuat;
 	}
 	public Thuoc() {
 		super();
@@ -131,7 +140,9 @@ public class Thuoc {
 		return "Thuoc [id=" + id + ", tenThuoc=" + tenThuoc + ", moTa=" + moTa + ", donViTinh=" + donViTinh
 				+ ", dangBaoChe=" + dangBaoChe + ", quyCachDongGoi=" + quyCachDongGoi + ", hanSuDung=" + hanSuDung
 				+ ", tonKho=" + tonKho + ", gia=" + gia + ", thue=" + thue + ", nhaCungCap=" + nhaCungCap
-				+ ", loaiThuoc=" + loaiThuoc + "]";
+				+ ", loaiThuoc=" + loaiThuoc + ", nuocSanXuat=" + nuocSanXuat + "]";
 	}
+	
+	
 
 }

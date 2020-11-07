@@ -9,7 +9,7 @@ public class QuanLy extends NhanVienBanThuoc {
 	}
 
 	public QuanLy(String id, String hoTenDem, String ten, String soDienThoai, String soCMND, Date ngaySinh,
-			boolean gioiTinh, DiaChi diaChi) {
-		super(id, hoTenDem, ten, soDienThoai, soCMND, ngaySinh, gioiTinh, diaChi);
+			boolean gioiTinh, DiaChi diaChi, byte[] avatar, TaiKhoan taiKhoan) {
+		super(id, hoTenDem, ten, soDienThoai, soCMND, ngaySinh, gioiTinh, diaChi, avatar, taiKhoan);
 	}
 }

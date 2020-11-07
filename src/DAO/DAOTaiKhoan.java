@@ -24,7 +24,7 @@ public class DAOTaiKhoan extends DAO {
 	}
 
 	public NhanVienBanThuoc getNhanVienBanThuocByUserName(String userName) {
-		String sql = "SELECT nv.*, dc.* from NhaVienBanThuoc nv join TaiKhoan tk on nv.NhanVienBanThuocId = tk.NhanVienBanThuocId left join DiaChi dc on dc.DiaChiId = tk.NhanVienBanThuocId where tk.TenDangNhap = ?";
+		String sql = "SELECT tk.PhanQuyen, nv.*, dc.* from NhaVienBanThuoc nv join TaiKhoan tk on nv.TenDangNhap = tk.TenDangNhap left join DiaChi dc on dc.DiaChiId = nv.NhanVienBanThuocId where tk.TenDangNhap = ?";
 
 		try {
 			PreparedStatement ps = conn.prepareStatement(sql);
