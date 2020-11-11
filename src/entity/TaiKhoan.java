@@ -36,5 +36,4 @@ public class TaiKhoan {
 		return "TaiKhoan [tenDangNhap=" + tenDangNhap + ", matKhau=" + matKhau + ", phanQuyen=" + phanQuyen + "]";
 	}
 	
-	
 }

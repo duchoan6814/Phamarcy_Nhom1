@@ -2,7 +2,7 @@ package entity;
 
 public class NhaCungCap {
 	private String id, tenNhaCungCap, soDienThoai, fax, trangChu;
-	private DiaChi diaChi;
+	private String diaChi;
 	public String getId() {
 		return id;
 	}
@@ -33,13 +33,13 @@ public class NhaCungCap {
 	public void setTrangChu(String trangChu) {
 		this.trangChu = trangChu;
 	}
-	public DiaChi getDiaChi() {
+	public String getDiaChi() {
 		return diaChi;
 	}
-	public void setDiaChi(DiaChi diaChi) {
+	public void setDiaChi(String diaChi) {
 		this.diaChi = diaChi;
 	}
-	public NhaCungCap(String id, String tenNhaCungCap, String soDienThoai, String fax, String trangChu, DiaChi diaChi) {
+	public NhaCungCap(String id, String tenNhaCungCap, String soDienThoai, String fax, String trangChu, String diaChi) {
 		super();
 		this.id = id;
 		this.tenNhaCungCap = tenNhaCungCap;

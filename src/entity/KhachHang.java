@@ -6,9 +6,13 @@ public class KhachHang {
 	private String id, hoTenDem, ten, soDienThoai;
 	private Date ngaySinh;
 	private boolean gioiTinh;
-	private DiaChi diaChi;
+	private String diaChi;
 	private double dienTichLuy;
 	private LoaiKhachHang loaiKhachHang;
+	
+	public void setDiaChi(String diaChi) {
+		this.diaChi = diaChi;
+	}
 	public String getId() {
 		return id;
 	}
@@ -45,12 +49,7 @@ public class KhachHang {
 	public void setGioiTinh(boolean gioiTinh) {
 		this.gioiTinh = gioiTinh;
 	}
-	public DiaChi getDiaChi() {
-		return diaChi;
-	}
-	public void setDiaChi(DiaChi diaChi) {
-		this.diaChi = diaChi;
-	}
+
 	public double getDienTichLuy() {
 		return dienTichLuy;
 	}
@@ -64,7 +63,7 @@ public class KhachHang {
 		this.loaiKhachHang = loaiKhachHang;
 	}
 	public KhachHang(String id, String hoTenDem, String ten, String soDienThoai, Date ngaySinh, boolean gioiTinh,
-			DiaChi diaChi, double dienTichLuy, LoaiKhachHang loaiKhachHang) {
+			String diaChi, double dienTichLuy, LoaiKhachHang loaiKhachHang) {
 		super();
 		this.id = id;
 		this.hoTenDem = hoTenDem;

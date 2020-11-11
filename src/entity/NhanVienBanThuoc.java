@@ -7,7 +7,7 @@ public class NhanVienBanThuoc {
 	private String id, hoTenDem, ten, soDienThoai, soCMND;
 	private Date ngaySinh;
 	private boolean gioiTinh;
-	private DiaChi diaChi;
+	private String diaChi;
 	private byte[] avatar;
 	private TaiKhoan taiKhoan;
 	
@@ -65,15 +65,14 @@ public class NhanVienBanThuoc {
 	public void setGioiTinh(boolean gioiTinh) {
 		this.gioiTinh = gioiTinh;
 	}
-	public DiaChi getDiaChi() {
+	public String getDiaChi() {
 		return diaChi;
 	}
-	public void setDiaChi(DiaChi diaChi) {
+	public void setDiaChi(String diaChi) {
 		this.diaChi = diaChi;
 	}
-	
 	public NhanVienBanThuoc(String id, String hoTenDem, String ten, String soDienThoai, String soCMND, Date ngaySinh,
-			boolean gioiTinh, DiaChi diaChi, byte[] avatar, TaiKhoan taiKhoan) {
+			boolean gioiTinh, String diaChi, byte[] avatar, TaiKhoan taiKhoan) {
 		super();
 		this.id = id;
 		this.hoTenDem = hoTenDem;

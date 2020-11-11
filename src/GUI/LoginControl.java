@@ -4,6 +4,7 @@ package GUI;
 import java.io.IOException;
 import java.util.ResourceBundle;
 
+import DAO.DAONhanVien;
 import DAO.DAOTaiKhoan;
 import entity.NhanVienBanThuoc;
 import javafx.event.ActionEvent;
@@ -20,6 +21,7 @@ import javafx.stage.Stage;
 public class LoginControl{
 
 	DAOTaiKhoan tk = new DAOTaiKhoan();
+	DAONhanVien nv_dao = new DAONhanVien();
 
 	public TextField userName;
 	public PasswordField password;
@@ -40,7 +42,7 @@ public class LoginControl{
 		try {
 //			root = FXMLLoader.load(getClass().getResource("MainSence.fxml"));
 			FXMLLoader loader = new FXMLLoader(getClass().getResource("MainSence.fxml"));
-			NhanVienBanThuoc nhanVienBanThuoc = tk.getNhanVienBanThuocByUserName(userName.getText());
+			NhanVienBanThuoc nhanVienBanThuoc = nv_dao.getNhanVienBanThuocByUserName(userName.getText());
 			MainSenceControl controller = new MainSenceControl();
 			controller.setNhanVienBanThuoc(nhanVienBanThuoc);
 			loader.setController(controller);
