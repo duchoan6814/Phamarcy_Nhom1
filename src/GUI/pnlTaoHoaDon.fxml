@@ -25,19 +25,9 @@
                         <Font name="System Italic" size="13.0" />
                      </font>
                   </Text>
-                  <TextField fx:id="txtMaKhachHang" layoutX="14.0" layoutY="38.0" promptText="Mã Khách Hàng..." />
+                  <TextField fx:id="txtMaKhachHang" layoutX="14.0" layoutY="38.0" promptText="Số Điện Thoại..." />
                   <TextField fx:id="txtTenKhachHang" layoutX="189.0" layoutY="38.0" prefHeight="26.0" prefWidth="234.0" promptText="Tên Khách Hàng..." />
                </children></AnchorPane>
-            <AnchorPane layoutX="460.0" layoutY="7.0" prefHeight="75.0" prefWidth="263.0" style="-fx-border-color: #000; -fx-border-radius: 10px; -fx-background-color: #fff; -fx-background-radius: 10px;">
-               <children>
-                  <Text layoutX="14.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nhân Viên">
-                     <font>
-                        <Font name="Roboto Bold" size="13.0" />
-                     </font></Text>
-                  <TextField id="txtMaNhanVien" fx:id="txtMaNhanVien" editable="false" layoutX="86.0" layoutY="5.0" prefHeight="26.0" prefWidth="165.0" promptText="Mã Nhân Viên..." />
-                  <TextField id="txtTenNhanVien" fx:id="txtTenNhanVien" layoutX="86.0" layoutY="40.0" prefHeight="26.0" prefWidth="165.0" promptText="Tên Nhân Viên..." />
-               </children>
-            </AnchorPane>
             <AnchorPane layoutX="733.0" layoutY="8.0" prefHeight="75.0" prefWidth="334.0" style="-fx-border-color: #000; -fx-border-radius: 10px; -fx-background-color: #fff; -fx-background-radius: 10px;">
                <children>
                   <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ngày Lập:" />

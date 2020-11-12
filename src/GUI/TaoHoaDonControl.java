@@ -26,8 +26,6 @@ public class TaoHoaDonControl implements Initializable {
 	private DAOKhachHang kh_dao = new DAOKhachHang();
 	
 	public Button btnThanhToan;
-	public TextField txtMaNhanVien;
-	public TextField txtTenNhanVien;
 	public TextField txtMaKhachHang;
 	
 	
@@ -51,9 +49,6 @@ public class TaoHoaDonControl implements Initializable {
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		// TODO Auto-generated method stub
-		txtMaNhanVien.setText(nhanVienBanThuoc.getId());
-		txtTenNhanVien.setText(nhanVienBanThuoc.getHoTenDem()+" "+nhanVienBanThuoc.getTen());
-//		TextFields.bindAutoCompletion(txtMaKhachHang, kh_dao.getAllMaKH());
 	}
 
 }
